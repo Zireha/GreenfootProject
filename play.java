@@ -2,8 +2,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class play extends World
 {
-    private int maxFood = 7; 
-    private int maxTrash = 7; // Maximum number of objects allowed on the screen
+    private int maxFood = 4; 
+    private int maxTrash = 3; // Maximum number of objects allowed on the screen
     
     static Counter score = new Counter ("score: ");
     static Counter hp = new Counter ("Hp: ");
