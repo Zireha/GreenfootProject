@@ -18,4 +18,18 @@ public class play extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(300, 500, 1); 
     }
+    
+    private void prepare()
+    {
+        robot robot = new robot();
+        addObject(robot, 146, 468);
+    }
+    
+    public void act()
+    {
+        if(Greenfoot.getRandomNumber(500)<3
+        {
+            addObject(new food+Greenfoot.getRandomNumber(5)(), Greenfoot.getRandomNumber(1000), 1));
+        }
+    }
 }
