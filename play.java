@@ -2,6 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class play extends World
 {
+    GreenfootSound music = new GreenfootSound("bg.mp3");
     private int maxFood = 4; 
     private int maxTrash = 3; // Maximum number of objects allowed on the screen
     
@@ -45,6 +46,7 @@ public class play extends World
         if (timeCount.getValue() >= 30) {
         Greenfoot.setWorld(new GameOver());
         }
+        music.play();
     }
     
     private void spawnFood()
