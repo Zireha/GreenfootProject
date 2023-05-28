@@ -20,6 +20,9 @@ public class play extends World
     
     private void prepare()
     {
+        CountTracker.foodCount = 0;
+        CountTracker.trashCount = 0;
+        
         robot robot = new robot();
         addObject(robot,138,400);
 
