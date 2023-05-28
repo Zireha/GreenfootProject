@@ -21,7 +21,7 @@ public class play extends World
     private void prepare()
     {
         robot robot = new robot();
-        addObject(robot,138,495);
+        addObject(robot,138,400);
 
         addObject(score, 40, 30);
         score.setValue(0);
@@ -71,14 +71,14 @@ public class play extends World
     if (trashSpawnTimer % trashSpawnInterval == 0 && CountTracker.trashCount < maxTrash) {
         trash newTrash = new trash();
         trashh newTrashh = new trashh();
-        newTrash.getImage().scale(20, 20);
+        newTrash.getImage().scale(30, 30);
         addObject(newTrash, Greenfoot.getRandomNumber(1000), 1);
         CountTracker.trashCount++;
         trashSpawnTimer = 0;
     }
     if (trashSpawnTimer % trashSpawnInterval == 0 && CountTracker.trashCount < maxTrash) {
         trashh newTrashh = new trashh();
-        newTrashh.getImage().scale(20, 20);
+        newTrashh.getImage().scale(30, 30);
         addObject(newTrashh, Greenfoot.getRandomNumber(1000), 1);
         CountTracker.trashCount++;
         trashSpawnTimer = 0;
