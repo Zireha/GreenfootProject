@@ -27,5 +27,7 @@ public class Start extends World
     {
         play_button play_button = new play_button();
         addObject(play_button,150,250);
+        
+        showText("TIME: 30 SECONDS",150,300);
     }
 }
